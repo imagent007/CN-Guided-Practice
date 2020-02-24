@@ -2,14 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import fetchGIF from "./fetch-gif";
 
-let apiKey = ""; // <-- add the API key from your slides
+let apiKey = "eCLr0aYcPt2PJvPUPgcqR5PZP9eRd8HC"; // <-- add the API key from your slides
 
-let searchTerm = ""; // <-- add a search term
-
+let searchTerm = "Mclaren"; // <-- add a search term
 class App extends React.Component {
   constructor() {
     super();
-    /**
+    /**23
      * This is where your data starts and needs
      * to low down through your other components.
      */
@@ -33,18 +32,20 @@ class App extends React.Component {
  * This is the component where your data will flow to.
  * Send the data down from the parent App component!
  */
-function Giphy() {
-  return <div>Where's my data? :(</div>;
+/*function Giphy() {
+  return <div>Where's my data? : <img src="this.state.imageURL"></img> </div>;
+  
 }
+*/
 
-/*
 class Giphy extends React.Component {
   render() {
     return (
-     <div>Where's my data? :(</div>;
+     <div>Where's my data? :(
+      <img src={this.props.data}/>
+  </div>
     );
   }
 }
-*/
 
 ReactDOM.render(<App />, document.getElementById("root"));
